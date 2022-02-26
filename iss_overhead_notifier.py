@@ -10,8 +10,8 @@ import time
 
 my_lat=28.436010
 my_long=77.300006
-email='rowmann33@gmail.com'
-pas = "romeo848651"
+email='rowmann33@gmail.com' #your email goes here
+pas = "romeo848651"     #your password goes here
 parameters={
     'formatted':0
 }
@@ -32,9 +32,9 @@ def check_iss():
             return True
 
 
-# while True:
-#     time.sleep(60)
-if True:
+while True:
+    time.sleep(60)
+if check_iss()==True:
     mail=smtplib.SMTP("smtp.gmail.com")
     mail.starttls()
     mail.login(user=email,password=pas)
