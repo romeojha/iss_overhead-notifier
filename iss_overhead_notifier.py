@@ -34,15 +34,15 @@ def check_iss():
 
 while True:
     time.sleep(60)
-if check_iss()==True:
-    mail=smtplib.SMTP("smtp.gmail.com")
-    mail.starttls()
-    mail.login(user=email,password=pas)
-    mail.sendmail(
-        to_addrs=email,
-        from_addr=email,
-        msg="subject: look up\n\n the iss satelite is overhead",
-    )
-    print('executed')
-else:
-    print("none")
+    if check_iss()==True:
+        mail=smtplib.SMTP("smtp.gmail.com")
+        mail.starttls()
+        mail.login(user=email,password=pas)
+        mail.sendmail(
+            to_addrs=email,
+            from_addr=email,
+            msg="subject: look up\n\n the iss satelite is overhead",
+        )
+        print('executed')
+    else:
+        print("none")
