@@ -1,6 +1,10 @@
 #an program, when runned will rerun itself in 60 second to check the ISS satelite
 #if its night and satelite location is near you, it will send you the mail
 #to look up in the sky .
+#a sms api, like twilio
+#run on cloud
+#hide the API tokens
+
 
 from datetime import datetime
 import requests
